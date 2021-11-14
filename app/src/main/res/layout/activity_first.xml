@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstActivity">
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/btn_up"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="UsingOnClickInXml" />
+
+    <EditText
+        android:id="@+id/txtEnterLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="@string/hint_login"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/txtEnterPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/txtEnterLogin"
+        app:layout_constraintStart_toStartOf="@+id/txtEnterLogin"
+        app:layout_constraintTop_toBottomOf="@+id/txtEnterLogin"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/txtEnterFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/hint_first_name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/txtEnterPassword"
+        app:layout_constraintStart_toStartOf="@+id/txtEnterPassword"
+        app:layout_constraintTop_toBottomOf="@+id/txtEnterPassword"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/txtEnterLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/hint_last_name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/txtEnterFirstName"
+        app:layout_constraintStart_toStartOf="@+id/txtEnterFirstName"
+        app:layout_constraintTop_toBottomOf="@+id/txtEnterFirstName"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/txtInLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_login"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/btnBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/txtPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/txtInLogin"
+        app:layout_constraintStart_toStartOf="@+id/txtInLogin"
+        app:layout_constraintTop_toBottomOf="@+id/txtInLogin"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/btnIn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/btn_in"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/txtPwd"
+        app:layout_constraintStart_toStartOf="@+id/txtPwd"
+        app:layout_constraintTop_toBottomOf="@+id/txtPwd" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

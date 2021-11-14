@@ -1,0 +1,14 @@
+<resources>
+
+    <string name="app_name">MyPractice</string>
+    <string name="btn_in">SIGN IN</string>
+    <string name="btn_up">SIGN UP</string>
+    <string name="btn_exit">SIGN OUT</string>
+    <string name="hint_login">Enter your login</string>
+    <string name="hint_first_name">Enter your first name</string>
+    <string name="hint_last_name">Enter your last name</string>
+    <string name="hint_password">Enter your password</string>
+    <string name="error_sign_in">Incorrect login!</string>
+    <string name="error_no_user">No one user signed up yet!</string>
+
+</resources>
